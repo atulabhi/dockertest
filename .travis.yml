@@ -23,7 +23,7 @@ before_script:
 - fluxbox >/dev/null 2>&1 &
 after_success:
   - export REPO=avneetsingh/travis
- # - docker login -u "$DOCKER_USER" -p "$DOCKER_PASS"
+  - docker login -u "avneetsingh" -p "$avneet@123"
   - if  [ $TRAVIS_PULL_REQUEST = "false" && "$TRAVIS_BRANCH" == "master"]; then 
      
      docker build -f openebs_pro/Dockerfile -t $REPO:$COMMIT .;
