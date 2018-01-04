@@ -22,7 +22,7 @@ before_script:
 - sleep 3
 - fluxbox >/dev/null 2>&1 &
 after_success:
-  - export REPO=mayadata/www-openebs-io
+  - export REPO=avneetsingh/travis
  # - docker login -u "$DOCKER_USER" -p "$DOCKER_PASS"
   - if  [ $TRAVIS_PULL_REQUEST = "false" && "$TRAVIS_BRANCH" == "master"]; then 
      
